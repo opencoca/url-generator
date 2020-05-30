@@ -2,8 +2,9 @@
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/vinicius73/gravatar-url-generator.svg)](https://greenkeeper.io/)
 
-A fun and friendly generator of Avatar urls.  
+A fun and friendly teaching URL generator.  
 
+- [Jitsi](https://meet.jit.si/)
 - [Gravatar](https://gravatar.com/)
 - [RoboHash](https://robohash.org/)
 - [DiceBear](https://avatars.dicebear.com/)
