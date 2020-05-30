@@ -7,14 +7,11 @@ export default {
 <template>
   <div class="about-links">
     <div class="flex">
-      <a target="_blank" href="https://twitter.com/luizvinicius73" class="flex-1 text-center text-white font-bold py-2 px-4 rounded-l">
+      <a target="_blank" href="https://twitter.com/openco" class="flex-1 text-center text-white font-bold py-2 px-4 rounded-l">
         Twitter
       </a>
-      <a target="_blank" href="https://github.com/vinicius73" class="flex-1 text-center text-white font-bold py-2 px-4">
+      <a target="_blank" href="https://github.com/opencoca/" class="flex-1 text-center text-white font-bold py-2 px-4">
         Github
-      </a>
-      <a target="_blank" href="https://www.linkedin.com/in/luizvinicius73/" class="flex-1 text-center text-white font-bold py-2 px-4 rounded-r">
-        Linkedin
       </a>
     </div>
   </div>

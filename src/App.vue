@@ -1,8 +1,8 @@
 <script>
-import InputEmail from './components/input-email.vue'
-import PageFooter from './components/footer.vue'
+import InputEmail from  './components/input-email.vue'
+import PageFooter from  './components/footer.vue'
 import randomEmail from './support/random-email'
-import Navigation from './components/navigation.vue'
+import Navigation from  './components/navigation.vue'
 
 export default {
   name: 'root',

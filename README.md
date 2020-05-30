@@ -1,6 +1,8 @@
 # Avatar URL Generator
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/vinicius73/gravatar-url-generator.svg)](https://greenkeeper.io/)
+[![Run on Repl.it](https://repl.it/badge/github/opencoca/url-generator)](https://repl.it/github/opencoca/url-generator)
+
+[![Known Vulnerabilities](https://snyk.io/test/github/opencoca/url-generator/badge.svg)](https://snyk.io/test/github/opencoca/url-generator)
 
 A fun and friendly teaching URL generator.  
 

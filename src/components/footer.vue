@@ -13,10 +13,10 @@ export default {
     </a>
     by
     <router-link :to="{ name: 'about' }" class="no-underline">
-      @vinicius73
+      @opencoca
     </router-link>
     <br>
-    <a target="_blank" class="text-sm" href="https://github.com/vinicius73/gravatar-url-generator">
+    <a target="_blank" class="text-sm" href="https://github.com/opencoca/url-generator">
       fork it <i class="fas fa-code-branch"></i> v{{ $options.version }}
     </a>
   </p>

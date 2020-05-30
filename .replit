@@ -1,0 +1,3 @@
+language = "nodejs"
+#run = "yarn build:production && npx serve dist"
+run ="npx vue-cli-service serve"

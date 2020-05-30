@@ -6,7 +6,7 @@ const randomEmail = () => fetch('https://randomuser.me/api/?inc=email')
   .then(user => (user.email).toLowerCase())
   .catch(e => {
     console.warn(e) // eslint-disable-line no-console
-    return 'vinicius73@mail.com'
+    return 'admin@openco.ca'
   })
 
 export default randomEmail

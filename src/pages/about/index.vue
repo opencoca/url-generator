@@ -4,7 +4,7 @@ import Links from './links.vue'
 
 export default {
   name: 'page-about',
-  title: 'Vinicius Reis',
+  title: 'OpenCo',
   components: { AvatarImage, Links }
 }
 </script>
@@ -12,12 +12,13 @@ export default {
 <template>
   <div>
     <AvatarImage
-      src="https://gravatar.com/avatar/f803c45d62a468e0cb990398c004bd3e?s=600&d=robohash&r=x" />
+      src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortWaved&accessoriesType=Blank&hairColor=BrownDark&facialHairType=BeardLight&facialHairColor=Brown&clotheType=CollarSweater&clotheColor=Black&eyeType=Default&eyebrowType=UpDown&mouthType=Default&skinColor=Light" />
 
-    <p>I am Full-Stack Severino-Developer, married and father a beautiful daughter. </p>
-    <p>I like movies, books, manga, comics, games...</p>
-    <p>That is, I like more things than I have time to do them.</p>
-    <p>I record <a target="_blank" href="https://www.youtube.com/channel/UCTluPqMkm90zyw6mCde561A">videos</a> for  <a target="_blank" href="https://blog.codecasts.com.br">CodeCasts</a> and work on <a target="_blank" href="https://decision6.com">Decision6</a> as an Application Engineer.</p>
+    <p>I am Full-Stack Developer, Educator. </p>
+    <p>I love movies, books, manga, comics, games...</p>
+    <p>I like more things than I have time to.</p>
+    <p>.</p>
+    <p>I record videos for fun teaching and work on <a target="_blank" href="https://robotinacan.com">Robot in a Can</a> as an Application Engineer.</p>
 
     <Links />
   </div>
