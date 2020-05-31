@@ -5,11 +5,14 @@ export default {
 
 <template>
   <div class="flex">
-    <router-link :to="{ name: 'gravatar' }" class="flex-1 text-center text-white font-bold py-2 px-4 rounded-l">
+    <router-link :to="{ name: 'meet' }" class="flex-1 text-center text-white font-bold py-2 px-4 rounded-l">
+      Meet
+    </router-link>
+    <router-link :to="{ name: 'gravatar' }" class="flex-1 text-center text-white font-bold py-2 px-4">
       Gravatar
     </router-link>
     <router-link :to="{ name: 'robohash' }" class="flex-1 text-center text-white font-bold py-2 px-4">
-      RoboHash
+      Cats
     </router-link>
     <router-link :to="{ name: 'adorable' }" class="flex-1 text-center text-white font-bold py-2 px-4">
       Adorable

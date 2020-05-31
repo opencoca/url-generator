@@ -35,7 +35,7 @@ export default {
       <div class="p-2 ml-auto mr-auto">
         <div class="bg-white shadow-md rounded px-4 pt-3 pb-4 mb-4 main-container">
           <h1 class="text-3xl text-center mb-5 text-indigo-darkest">
-            Avatar URL Generator
+            Teaching URL Generator
           </h1>
           <div class="mb-4">
             <InputEmail @call:generate="randomEmail" v-bind="{ loading }" v-model="email" />

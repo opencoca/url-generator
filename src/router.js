@@ -23,6 +23,11 @@ const routes = [{
   path: '/about',
   name: 'about',
   component: () => import(/* webpackChunkName: "page-about" */'./pages/about')
-}]
+}, {
+  path: '/meet',
+  name: 'meet',
+  component: () => import(/* webpackChunkName: "page-meet" */'./pages/meet')
+}
+]
 
 export default new Router({ routes })
