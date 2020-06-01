@@ -12,8 +12,7 @@ A fun and friendly teaching URL generator.
 - [DiceBear](https://avatars.dicebear.com/)
 - [Adorable](http://avatars.adorable.io/)
 
-[![demo](demo-cover.png)]
-(https://url-generator--adminteam.repl.co/)
+[![demo](https://raw.githack.com/opencoca/url-generator/master/demo-cover.png)](https://url-generator--adminteam.repl.co/)
 
 ## Resources used
 
