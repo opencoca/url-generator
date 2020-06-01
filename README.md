@@ -1,4 +1,4 @@
-# Avatar URL Generator
+# URL Generator
 
 [![Run on Repl.it](https://repl.it/badge/github/opencoca/url-generator)](https://repl.it/github/opencoca/url-generator)
 
@@ -12,9 +12,8 @@ A fun and friendly teaching URL generator.
 - [DiceBear](https://avatars.dicebear.com/)
 - [Adorable](http://avatars.adorable.io/)
 
-![demo](demo-cover.png)
-
-https://vinicius73.github.io/gravatar-url-generator/
+[![demo](demo-cover.png)]
+(https://url-generator--adminteam.repl.co/)
 
 ## Resources used
 
