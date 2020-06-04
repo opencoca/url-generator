@@ -5,7 +5,10 @@ const optionz = {
     label: 'page',
     name: 'page',
     items: makeOptions(['1', '3', '5', '8'])
-  },
+  }
+}
+
+const old_optionz = {
   fallbacks: {
     label: 'kind',
     name: 'fallback',
@@ -26,5 +29,6 @@ const optionz = {
       ])
   }
 }
+
 
 export { optionz }

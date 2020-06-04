@@ -30,8 +30,6 @@ export default {
 
 <template>
   <div class="max-w-full relative">
-
-    <input v-model="frame" placeholder="https://archive.org/stream/TheUltimatePaperPlaneBook?ui=embed#mode/2up?ui=embed">
     <vue-friendly-iframe :src="src" @load="onLoad" v-bind="{src}"></vue-friendly-iframe>
 
     <InputCopy class="mb-5" :value="src" />
@@ -41,6 +39,8 @@ export default {
       :fallback.sync="fallback"
       :size.sync="size"
       :rating.sync="rating" />
+
+      <input v-model="frame" placeholder="https://archive.org/stream/TheUltimatePaperPlaneBook?ui=embed#mode/2up?ui=embed">
   </div>
 </template>
 
