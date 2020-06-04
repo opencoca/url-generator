@@ -16,12 +16,13 @@ export default {
     fallback: 'robohash',
     rating: 'x',
     size: '800',
-    frame: 'https://archive.org/stream/TheUltimatePaperPlaneBook?ui=embed#page/n65'
+    page: '1',
+    frame: 'https://archive.org/stream/TheUltimatePaperPlaneBook?ui=embed#page/n'
   }),
   computed: {
     src () {
       const { frame, page ,hash, fallback, size, rating } = this
-      return `${frame}#/mode/2up?ui=embed'&${hash}?s=${size}&d=${fallback}&r=${rating}`
+      return `${frame}${page}/mode/2up&${hash}?s=${size}&d=${fallback}&r=${rating}`
     }
   }
 }
@@ -31,11 +32,12 @@ export default {
   <div class="max-w-full relative">
 
     <input v-model="frame" placeholder="https://archive.org/stream/TheUltimatePaperPlaneBook?ui=embed#mode/2up?ui=embed">
-    <vue-friendly-iframe :src="frame" @load="onLoad" v-bind="frame"></vue-friendly-iframe>
+    <vue-friendly-iframe :src="src" @load="onLoad" v-bind="{src}"></vue-friendly-iframe>
 
     <InputCopy class="mb-5" :value="src" />
 
     <Options
+      :page.sync="page"
       :fallback.sync="fallback"
       :size.sync="size"
       :rating.sync="rating" />
