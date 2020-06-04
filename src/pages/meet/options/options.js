@@ -1,6 +1,11 @@
 import { makeOptions } from '../../../support/options'
 
 const optionz = {
+  page: {
+    label: 'page',
+    name: 'page',
+    items: makeOptions(['1', '3', '5', '8'])
+  },
   fallbacks: {
     label: 'kind',
     name: 'fallback',

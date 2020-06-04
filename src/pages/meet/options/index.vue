@@ -5,10 +5,6 @@ import { fallbacks, sizes, ratings, optionz } from './options'
 export default {
   name: 'gravatar-options',
   components: { VSelect },
-  fallbacks,
-  sizes,
-  ratings,
-  props: ['rating', 'size', 'fallback'],
   optionz
 }
 </script>

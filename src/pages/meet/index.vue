@@ -16,12 +16,12 @@ export default {
     fallback: 'robohash',
     rating: 'x',
     size: '800',
-    frame: 'https://archive.org/stream/TheUltimatePaperPlaneBook?ui=embed#mode/2up?ui=embed'
+    frame: 'https://archive.org/stream/TheUltimatePaperPlaneBook?ui=embed#page/n65'
   }),
   computed: {
     src () {
-      const { frame, hash, fallback, size, rating } = this
-      return `${frame}#${hash}?s=${size}&d=${fallback}&r=${rating}`
+      const { frame, page ,hash, fallback, size, rating } = this
+      return `${frame}#/mode/2up?ui=embed'&${hash}?s=${size}&d=${fallback}&r=${rating}`
     }
   }
 }
