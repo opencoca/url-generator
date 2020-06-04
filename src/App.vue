@@ -62,6 +62,6 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 .main-container {
-  max-width: 400px;
+  max-width: 600px;
 }
 </style>
