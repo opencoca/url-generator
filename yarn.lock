@@ -10597,6 +10597,13 @@ vm-browserify@^1.0.1:
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.0.tgz#bd76d6a23323e2ca8ffa12028dc04559c75f9019"
   integrity sha512-iq+S7vZJE60yejDYM0ek6zg308+UZsdtPExWP9VZoCFCz1zkJoXFnAX7aZfd/ZwrkidzdUZL0C/ryW+JwAiIGw==
 
+vue-columns-resizable@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/vue-columns-resizable/-/vue-columns-resizable-0.0.1.tgz#3c3f11f21f483ecff14567716bac7c84a64f84c8"
+  integrity sha512-ElToITjEJQTlUx4NIrL4QFNr+jQIJ6XwHZrJ55h92P4VHplwIjy8v6KfnFAbXSphqhlo6hKbyyEXmsrhMY5cFw==
+  dependencies:
+    vue "^2.5.22"
+
 vue-eslint-parser@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/vue-eslint-parser/-/vue-eslint-parser-2.0.3.tgz#c268c96c6d94cfe3d938a5f7593959b0ca3360d1"
@@ -10657,7 +10664,7 @@ vue-loader@^15.7.0:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
-vue-material@1.0.0-beta-14:
+vue-material@^1.0.0-beta-14:
   version "1.0.0-beta-14"
   resolved "https://registry.yarnpkg.com/vue-material/-/vue-material-1.0.0-beta-14.tgz#bb3fc46bec4ed045f990744383ac944a190ceed3"
   integrity sha512-Y6ZUqKqbdUEYxOHJcqsaIIi3Vopn0+k/zw34V8lz03z8D/PMaz1T+jH7Dn3qZdrQNn7qsvDqBrafDcn0avho8A==
@@ -10702,6 +10709,11 @@ vue-toc@0.0.1:
   integrity sha512-RZfVgLzk/kpEmk05ptvU/+x3TVo4Ai4BBARvV4iCurR9bJsAqnnrqwjEBKnEG+s6NT0yQ6EY0JMGViyOUGysDw==
   dependencies:
     vue "^2.6.10"
+
+vue@^2.5.22:
+  version "2.6.11"
+  resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.11.tgz#76594d877d4b12234406e84e35275c6d514125c5"
+  integrity sha512-VfPwgcGABbGAue9+sfrD4PuwFar7gPb1yl1UK1MwXoQPAw0BKSqWfoYCT/ThFrdEVWoI51dBuyCoiNU9bZDZxQ==
 
 vue@^2.6.10:
   version "2.6.10"
