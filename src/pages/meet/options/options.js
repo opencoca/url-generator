@@ -3,7 +3,7 @@ import { makeOptions } from '../../../support/options'
 const optionz = {
   page: {
     label: 'page',
-    name: 'page',
+    name: 'Number of rooms',
     items: makeOptions(['1', '3', '5', '8'])
   }
 }

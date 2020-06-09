@@ -5,6 +5,13 @@ import AvatarImage from '../components/image.vue'
 import GeneratorLink from '../components/generator-link.vue'
 import { debounce } from 'lodash-es'
 
+// import Vue from 'vue'
+// import VueMaterial from 'vue-material'
+// import 'vue-material/dist/vue-material.min.css'
+
+// Vue.use(VueMaterial)
+
+
 export default {
   mixins: [HashMixin()],
   components: { InputCopy, ProgressBar, AvatarImage, GeneratorLink },
