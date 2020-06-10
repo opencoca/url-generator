@@ -1,16 +1,19 @@
 <script>
 import InputEmail from  './components/input-email.vue'
+//import InputClass from  './components/input-class.vue'
 import PageFooter from  './components/footer.vue'
 import randomEmail from './support/random-email'
-import randomClass from './support/random-class'
+//import randomClass from './support/random-class'
 import Navigation from  './components/navigation.vue'
 
 
 export default {
   name: 'root',
-  components: { InputEmail, Navigation, PageFooter },
+  components: { InputEmail, InputClass, Navigation, PageFooter },
+
   data: () => ({
     email: '',
+    class: '',
     ready: false,
     loading: true
   }),
@@ -23,19 +26,20 @@ export default {
           this.loading = false
           this.ready = true
         })
-    },
-    randomClass () {
-      this.loading = true
-      randomClass()
-        .then(email => {
-          this.email = email
-          this.loading = false
-          this.ready = true
-        })
     }
+//    randomClass () {
+//      this.loading = true
+//      randomClass()
+//        .then(class => {
+//          this.class = class
+//          this.loading = false
+//          this.ready = true
+//        })
+//    }
   },
   mounted () {
     this.randomEmail()
+//  this.randomClass()
   }
 }
 </script>
@@ -50,7 +54,11 @@ export default {
             Framr <span class="text-sm">Classroom Generator</span>
           </h1>
           <div class="mb-4">
-            <InputEmail @call:generate="randomClass" v-bind="{ loading }" v-model="email" />
+            <InputEmail @call:generate="randomEmail" v-bind="{ loading }" v-model="email" />
+          </div>
+          .
+          <div class="mb-4">
+            <InputClass @call:generate="randomClass" v-bind="{ loading }" v-model="email" />
           </div>
           <Navigation class="mb-4" />
           <div class="mb-4" v-if="ready">
