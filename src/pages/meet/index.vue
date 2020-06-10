@@ -31,25 +31,21 @@ export default {
 <template>
   <div class="max-w-full relative">
 
-
-    <InputCopy class="mb-5" :value="src" />
-
     <Options
       :page.sync="page"
       :fallback.sync="fallback"
       :size.sync="size"
       :rating.sync="rating" />
 
-      <input v-model="frame" placeholder="https://archive.org/stream/TheUltimatePaperPlaneBook?ui=embed#mode/2up?ui=embed">
+    <InputCopy class="mb-5" :value="src" />
 
-          <vue-friendly-iframe :src="src" @load="onLoad" v-bind="{src}"></vue-friendly-iframe>
   </div>
 </template>
 
 <style>
 iframe{
-      min-height: 500px;
-      min-width: 500px;
+      min-height: 400px;
+      min-width: 400px;
 }
 
 input, iframe {width:100%}
