@@ -7,7 +7,7 @@ export default {
   },
   methods: {
     generateEmail () {
-      this.$emit('call:generate')
+      this.$emit('call:generateEmail')
     }
   }
 }

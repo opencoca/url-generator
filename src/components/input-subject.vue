@@ -7,7 +7,7 @@ export default {
   },
   methods: {
     generateSubject() {
-      this.$emit('call:generate')
+      this.$emit('call:generateSubject')
     }
   }
 }
@@ -17,7 +17,7 @@ export default {
   <div class="flex items-center rounded  outline-blue border">
     <input
       class="bg-transparent outline-blue border-none w-full text-grey-darker mr-3 py-2 px-3 text-2xl leading-tight"
-      type="subject"
+      type="text"
       placeholder="Subject Name"
       :disabled="loading"
       v-bind="{ value }"
