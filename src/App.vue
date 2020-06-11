@@ -15,31 +15,32 @@ export default {
     email: '',
     subject: '',
     ready: false,
-    loading: true
+    loadingEmail: true,
+    loadingSubject: false
   }),
   methods: {
     randomEmail () {
-      this.loading = true
+      this.loadingEmail = true
       randomEmail()
         .then(email => {
           this.email = email
-          this.loading = false
+          this.loadingEmail = false
           this.ready = true
         })
     },
     randomSubject () {
-      this.loading = true
+      this.loadingSubject = true
       randomSubject()
         .then(subject => {
           this.subject = subject
-          this.loading = false
+          this.loadingSubject = false
           this.ready = true
         })
     }
   },
   mounted () {
     this.randomEmail()
-    this.randomSubject()
+    //this.randomSubject()
   }
 }
 </script>
@@ -55,10 +56,10 @@ export default {
             </h1>
           </router-link>
           <div class="mb-4">
-            <InputEmail @call:generateEmail="randomEmail" v-bind="{ loading }" v-model="email" />
+            <InputEmail @call:generateEmail="randomEmail" v-bind="{ loadingEmail }" v-model="email" />
           </div>
           <div class="mb-4">
-            <InputSubject @call:generateSubject="randomSubject" v-bind="{ loading }" v-model="subject" />
+            <InputSubject @call:generateSubject="randomSubject" v-bind="{ loadingSubject }" v-model="subject" />
           </div>
           <Navigation class="mb-4" />
           <div class="mb-4" v-if="ready">

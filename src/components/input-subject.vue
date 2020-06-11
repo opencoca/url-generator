@@ -3,7 +3,7 @@ export default {
   name: 'input-subject',
   props: {
     value: String,
-    loading: Boolean
+    loadingSubject: Boolean
   },
   methods: {
     generateSubject() {
@@ -19,13 +19,13 @@ export default {
       class="bg-transparent outline-blue border-none w-full text-grey-darker mr-3 py-2 px-3 text-2xl leading-tight"
       type="text"
       placeholder="Subject Name"
-      :disabled="loading"
+      :disabled="loadingSubject"
       v-bind="{ value }"
       @input="event => $emit('input', event.target.value)">
     <a class="flex-no-shrink bg-transparent border-transparent text-sm border-4 hover:text-blue-600 text-blue  py-1 px-2 rounded cursor-pointer"
       title="Generate Subject Name"
       @click="generateSubject">
-      <i class="fas fa-sync-alt" :class="{ spin: loading }"></i>
+      <i class="fas fa-sync-alt" :class="{ spin: loadingSubject }"></i>
     </a>
   </div>
 </template>
