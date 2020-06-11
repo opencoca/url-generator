@@ -1,8 +1,8 @@
 # URL Generator
 
-[![Run on Repl.it](https://repl.it/badge/github/opencoca/url-generator)](https://repl.it/github/opencoca/url-generator)
+[![Run on Repl.it](https://repl.it/badge/github/bendouek/url-generator)](https://repl.it/github/bendouek/url-generator)
 
-[![Known Vulnerabilities](https://snyk.io/test/github/opencoca/url-generator/badge.svg)](https://snyk.io/test/github/opencoca/url-generator)
+[![Known Vulnerabilities](https://snyk.io/test/github/bendouek/url-generator/badge.svg)](https://snyk.io/test/github/bendouek/url-generator)
 
 A fun and friendly teaching URL generator.  
 
