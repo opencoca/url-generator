@@ -5,9 +5,9 @@ const words = ['Amazing', 'Awesome', 'Blithesome', 'Excellent', 'Fabulous',
 'Wondrous'];
 
 
-const randomClass = () =>  {
+const randomSubject = () =>  {
   	const word = words[Math.floor(Math.random() * words.length - 1)];
     return word
   }
 
-export default randomClass
+export default randomSubject

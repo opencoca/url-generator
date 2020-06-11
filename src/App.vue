@@ -1,19 +1,19 @@
 <script>
 import InputEmail from  './components/input-email.vue'
-//import InputClass from  './components/input-class.vue'
+import InputSubject from  './components/input-subject.vue'
 import PageFooter from  './components/footer.vue'
 import randomEmail from './support/random-email'
-//import randomClass from './support/random-class'
+import randomSubject from './support/random-subject'
 import Navigation from  './components/navigation.vue'
 
 
 export default {
   name: 'root',
-  components: { InputEmail, InputClass, Navigation, PageFooter },
+  components: { InputEmail, InputSubject, Navigation, PageFooter },
 
   data: () => ({
     email: '',
-    class: '',
+    subject: '',
     ready: false,
     loading: true
   }),
@@ -26,20 +26,20 @@ export default {
           this.loading = false
           this.ready = true
         })
+    },
+    randomSubject () {
+      this.loading = true
+      randomSubject()
+        .then(subject => {
+          this.subject = subject
+          this.loading = false
+          this.ready = true
+        })
     }
-//    randomClass () {
-//      this.loading = true
-//      randomClass()
-//        .then(class => {
-//          this.class = class
-//          this.loading = false
-//          this.ready = true
-//        })
-//    }
   },
   mounted () {
     this.randomEmail()
-//  this.randomClass()
+    this.randomSubject()
   }
 }
 </script>
@@ -49,7 +49,6 @@ export default {
     <div class="flex h-screen w-full flex-wrap">
       <div class="p-2 ml-auto mr-auto">
         <div class="bg-white shadow-md rounded px-4 pt-3 pb-4 mb-4 main-container">
-        
           <h1 class="text-3xl text-center mb-5 text-indigo-darkest">
             Framr <span class="text-sm">Classroom Generator</span>
           </h1>
@@ -58,7 +57,7 @@ export default {
           </div>
           .
           <div class="mb-4">
-            <InputClass @call:generate="randomClass" v-bind="{ loading }" v-model="email" />
+            <InputSubject @call:generate="randomSubject" v-bind="{ loading }" v-model="subject" />
           </div>
           <Navigation class="mb-4" />
           <div class="mb-4" v-if="ready">
