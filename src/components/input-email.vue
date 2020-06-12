@@ -7,6 +7,7 @@ export default {
   },
   methods: {
     generateEmail () {
+      console.log('NEW EMAIL') // eslint-disable-line no-console
       this.$emit('call:generateEmail')
     }
   }

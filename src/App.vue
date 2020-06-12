@@ -29,6 +29,7 @@ export default {
         })
     },
     randomSubject () {
+      console.log('trying to gen random subject')
       this.loadingSubject = true
       randomSubject()
         .then(subject => {
