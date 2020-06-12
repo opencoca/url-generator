@@ -10,7 +10,7 @@ Vue.config.productionTip = !isProduction
 Vue.config.performance = !isProduction
 
 Vue.use(PageTitle, {
-  suffix: ' - teaching URL Generator  '
+  suffix: ' - Teaching URL Generator  '
 })
 
 new Vue({

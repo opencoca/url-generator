@@ -1,30 +1,47 @@
 <script>
 import InputEmail from  './components/input-email.vue'
+import InputSubject from  './components/input-subject.vue'
 import PageFooter from  './components/footer.vue'
 import randomEmail from './support/random-email'
+import randomSubject from './support/random-subject'
 import Navigation from  './components/navigation.vue'
+
 
 export default {
   name: 'root',
-  components: { InputEmail, Navigation, PageFooter },
+  components: { InputEmail, InputSubject, Navigation, PageFooter },
+
   data: () => ({
     email: '',
+    subject: '',
     ready: false,
-    loading: true
+    loadingEmail: true,
+    loadingSubject: false
   }),
   methods: {
     randomEmail () {
-      this.loading = true
+      this.loadingEmail = true
       randomEmail()
         .then(email => {
           this.email = email
-          this.loading = false
+          this.loadingEmail = false
+          this.ready = true
+        })
+    },
+    randomSubject () {
+      this.loadingSubject = true
+      randomSubject()
+        .then(subject => {
+          this.subject = subject
+          this.loadingSubject = false
           this.ready = true
         })
     }
   },
+  //called on load
   mounted () {
     this.randomEmail()
+    this.randomSubject()
   }
 }
 </script>
@@ -34,15 +51,20 @@ export default {
     <div class="flex h-screen w-full flex-wrap">
       <div class="p-2 ml-auto mr-auto">
         <div class="bg-white shadow-md rounded px-4 pt-3 pb-4 mb-4 main-container">
-          <h1 class="text-3xl text-center mb-5 text-indigo-darkest">
-            Avatar URL Generator
-          </h1>
+          <router-link :to="{ name: 'meet' }" class="no-underline">
+            <h1 class="bg-indigo-darkest text-3xl text-center mb-5 text-white">
+              Framr <span class="text-sm">Classroom Generator</span>
+            </h1>
+          </router-link>
           <div class="mb-4">
-            <InputEmail @call:generate="randomEmail" v-bind="{ loading }" v-model="email" />
+            <InputEmail @call:generateEmail="randomEmail" v-bind="{ loadingEmail }" v-model="email" />
+          </div>
+          <div class="mb-4">
+            <InputSubject @call:generateSubject="randomSubject" v-bind="{ loadingSubject }" v-model="subject" />
           </div>
           <Navigation class="mb-4" />
           <div class="mb-4" v-if="ready">
-            <router-view v-bind="{ email }" />
+            <router-view v-bind="{ email, subject }" />
           </div>
         </div>
         <PageFooter class="text-center text-white text-xs mb-5" />
@@ -53,15 +75,20 @@ export default {
 
 <style>
 :root {
+  --color-blue: #2196F3;
   --color-green: #009586;
-  --color-blue: #2c3e50;
-  --color-dark: #1a2420;
+  --color-dark: #121128;
 }
 body {
-  background-color: var(--color-green);
-  font-family: 'Ubuntu', sans-serif;
+  background-color: var(--color-blue);
+  font-family: 'Lato', sans-serif;
 }
 .main-container {
-  max-width: 400px;
+  max-width: 600px;
+}
+
+h1{
+  margin: -0.75rem -1rem 0;
+  padding: 0.75rem;
 }
 </style>

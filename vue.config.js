@@ -11,7 +11,7 @@ const precacheSw = `${publicPath}precache-sw.js`
 
 module.exports = {
   devServer: {
-        disableHostCheck: true
+    disableHostCheck: true
   },
   publicPath,
   pwa: {

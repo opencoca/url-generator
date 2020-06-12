@@ -1,4 +1,4 @@
-# Avatar URL Generator
+# URL Generator
 
 [![Run on Repl.it](https://repl.it/badge/github/opencoca/url-generator)](https://repl.it/github/opencoca/url-generator)
 
@@ -12,9 +12,7 @@ A fun and friendly teaching URL generator.
 - [DiceBear](https://avatars.dicebear.com/)
 - [Adorable](http://avatars.adorable.io/)
 
-![demo](demo-cover.png)
-
-https://vinicius73.github.io/gravatar-url-generator/
+[![demo](https://raw.githack.com/opencoca/url-generator/master/demo-cover.jpg)](https://url-generator--adminteam.repl.co/)
 
 ## Resources used
 
@@ -31,4 +29,8 @@ https://vinicius73.github.io/gravatar-url-generator/
 ```shell
 yarn # npm install
 yarn serve # npm run serve
+#Or just use NPX
+npx vue-cli-service serve
 ```
+
+## [Working on new design](https://www.figma.com/file/ncqIPr2W6aQTRpmHdr5fTf/Framr_Web?node-id=1%3A2)
