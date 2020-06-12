@@ -56,13 +56,11 @@ export default {
               Framr <span class="text-sm">Classroom Generator</span>
             </h1>
           </router-link>
-          <div class="mb-4">
-            <InputEmail @call:generateEmail="randomEmail" v-bind="{ loadingEmail }" v-model="email" />
-          </div>
+
           <div class="mb-4">
             <InputSubject @call:generateSubject="randomSubject" v-bind="{ loadingSubject }" v-model="subject" />
           </div>
-          <Navigation class="mb-4" />
+          <!-- <Navigation class="mb-4" /> -->
           <div class="mb-4" v-if="ready">
             <router-view v-bind="{ email, subject }" />
           </div>
