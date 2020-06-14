@@ -1,43 +1,20 @@
 import { makeOptions } from '../../../support/options'
 
 const optionz = {
-  shared_content:{
-    name: 'content',
+  shared_content: {
+    name: 'app',
     label: 'Choose your shared content',
-    items: makeOptions([
-      'Whiteboard', 
-      'Snap! coding', 
-      'Reading'
-      ])
+    items: [
+      { label: 'White Board', value: 'wbo.ophir.dev/boards/anonymous/' },
+      { label: 'Snap! coding', value: 'https://app.robotinacan.com/videochat.html' },
+      { label: 'Reading', value: 'https://archive.org/stream/TheUltimatePaperPlaneBook?ui=embed#page/n5/mode/2up' }
+    ]
   },
   page: {
-    name: 'page',
+    name: 'rooms',
     label: 'Number of rooms',
-    items: makeOptions(['1', '3', '5', '8'])
+    items: makeOptions(['0', '1', '3', '4', '5'])
   }
 }
-
-const old_optionz = {
-  fallbacks: {
-    name: 'fallback',
-    label: 'kind',
-    items: makeOptions([
-      '404', 'mp', 'identicon', 'monsterid', 'wavatar', 'retro', 'robohash', 'blank'
-    ])
-  },
-  ratings: {
-    name: 'rating',
-    label: 'rating',
-    items: makeOptions(['g', 'pg', 'r', 'x'])
-  },
-  sizes: {
-    name: 'size',
-    label: 'size',
-    items: makeOptions([
-      '200', '400','600', '800'
-      ])
-  }
-}
-
 
 export { optionz }

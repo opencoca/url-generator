@@ -2,10 +2,10 @@
 import Base from '../base'
 import Options from './options/index.vue'
 
-import Vue from 'vue';
-import VueFriendlyIframe from 'vue-friendly-iframe';
+import Vue from 'vue'
+import VueFriendlyIframe from 'vue-friendly-iframe'
 
-Vue.use(VueFriendlyIframe);
+Vue.use(VueFriendlyIframe)
 
 export default {
   name: 'page-meet',
@@ -13,16 +13,16 @@ export default {
   extends: Base,
   components: { Options },
   data: () => ({
-    fallback: 'robohash',
-    rating: 'x',
-    size: '800',
-    page: '1',
-    frame: 'https://archive.org/stream/TheUltimatePaperPlaneBook?ui=embed#page/n'
+    // subject: 'Robot-in-a-Can',
+    count: '3',
+    rooms: '3',
+    app: 'app.robotinacan.com/snap/snapEmbed/',
+    frame: 'https://app.robotinacan.com/videochat.html'
   }),
   computed: {
     src () {
-      const { frame, page ,hash, fallback, size, rating } = this
-      return `${frame}${page}/mode/2up&${hash}?s=${size}&d=${fallback}&r=${rating}`
+      const { frame, rooms, subject, app, count } = this
+      return `${frame}?meet=${subject}&rooms=${rooms}&app=${app}&count=${count}`
     }
   }
 }
@@ -32,10 +32,10 @@ export default {
   <div class="max-w-full relative">
 
     <Options
-      :page.sync="page"
-      :fallback.sync="fallback"
-      :size.sync="size"
-      :rating.sync="rating" />
+      :subject.sync="subject"
+      :count.sync="count"
+      :rooms.sync="rooms"
+      :app.sync="app" />
 
     <InputCopy class="mb-5" :value="src" />
 

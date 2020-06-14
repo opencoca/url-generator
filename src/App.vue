@@ -1,11 +1,12 @@
 <script>
-import InputEmail from  './components/input-email.vue'
-import InputSubject from  './components/input-subject.vue'
-import PageFooter from  './components/footer.vue'
+import InputEmail from './components/input-email.vue'
+import InputSubject from './components/input-subject.vue'
+
 import randomEmail from './support/random-email'
 import randomSubject from './support/random-subject'
-import Navigation from  './components/navigation.vue'
 
+import Navigation from './components/navigation.vue'
+import PageFooter from './components/footer.vue'
 
 export default {
   name: 'root',
@@ -38,7 +39,7 @@ export default {
         })
     }
   },
-  //called on load
+  // called on load
   mounted () {
     this.randomEmail()
     this.randomSubject()
