@@ -18,8 +18,10 @@ export default {
   data: () => ({
     loading: true
   }),
+  // Props Pass Data to Child Components
   props: {
-    email: String
+    email: String,
+    subject: String
   },
   watch: {
     src: 'load'
