@@ -8,7 +8,7 @@ const routes = [{
   name: 'meet',
   component: () => import(/* webpackChunkName: "page-meet" */'./pages/meet')
 }, {
-  path: 'space',
+  path: '/space',
   name: 'space',
   component: () => import(/* webpackChunkName: "page-space" */'./pages/space')
 }, {
