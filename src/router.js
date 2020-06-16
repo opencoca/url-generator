@@ -8,6 +8,10 @@ const routes = [{
   name: 'meet',
   component: () => import(/* webpackChunkName: "page-meet" */'./pages/meet')
 }, {
+  path: 'space',
+  name: 'space',
+  component: () => import(/* webpackChunkName: "page-space" */'./pages/space')
+}, {
   path: '/gravatar',
   name: 'gravatar',
   component: () => import(/* webpackChunkName: "page-gravatar" */'./pages/gravatar')

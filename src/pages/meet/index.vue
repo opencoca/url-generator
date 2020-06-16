@@ -13,7 +13,7 @@ export default {
   extends: Base,
   components: { Options },
   data: () => ({
-    // subject: 'Robot-in-a-Can',
+    subject: 'Robot-in-a-Can',
     count: '3',
     rooms: '3',
     app: 'app.robotinacan.com/snap/snapEmbed/',
@@ -21,7 +21,7 @@ export default {
   }),
   computed: {
     src () {
-      const { frame, rooms, subject, app, count } = this
+      const { frame, rooms, subject, hash, app, count } = this
       return `${frame}?meet=${subject}&rooms=${rooms}&app=${app}&count=${count}`
     }
   }
@@ -32,7 +32,6 @@ export default {
   <div class="max-w-full relative">
 
     <Options
-      :subject.sync="subject"
       :count.sync="count"
       :rooms.sync="rooms"
       :app.sync="app" />
@@ -43,10 +42,5 @@ export default {
 </template>
 
 <style>
-iframe{
-      min-height: 400px;
-      min-width: 400px;
-}
 
-input, iframe {width:100%}
 </style>

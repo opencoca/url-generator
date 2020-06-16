@@ -11,7 +11,6 @@ import { debounce } from 'lodash-es'
 
 // Vue.use(VueMaterial)
 
-
 export default {
   mixins: [HashMixin()],
   components: { InputCopy, ProgressBar, AvatarImage, GeneratorLink },

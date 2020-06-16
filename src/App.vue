@@ -36,6 +36,7 @@ export default {
           this.subject = subject
           this.loadingSubject = false
           this.ready = true
+          console.log(this.subject)
         })
     }
   },
@@ -54,16 +55,18 @@ export default {
         <div class="bg-white shadow-md rounded px-4 pt-3 pb-4 mb-4 main-container">
           <router-link :to="{ name: 'meet' }" class="no-underline">
             <h1 class="bg-indigo-darkest text-3xl text-center mb-5 text-white">
-              Framr <span class="text-sm">Classroom Generator</span>
+              Latitude <span class="text-sm">Room Generator</span>
             </h1>
           </router-link>
-
+         <!--<div class="mb-4">
+            <InputEmail @call:generateEmail="randomEmail" v-bind="{ loadingEmail }" v-model="email" />
+          </div>-->
           <div class="mb-4">
             <InputSubject @call:generateSubject="randomSubject" v-bind="{ loadingSubject }" v-model="subject" />
           </div>
           <!-- <Navigation class="mb-4" /> -->
           <div class="mb-4" v-if="ready">
-            <router-view v-bind="{ email, subject }" />
+            <router-view v-bind="{ subject, email }" />
           </div>
         </div>
         <PageFooter class="text-center text-white text-xs mb-5" />
