@@ -9,8 +9,7 @@ export default {
   <p class="text-lg">
     <router-link :to="{ name: 'space' }" class="no-underline">
       Test Space link 
-    </router-link><br>
-    
+    </router-link><br>  
     Made with
     <a href="https://vuejs.org" class="no-underline" target="_blank">
       <i title="Vue.js" aria-label="Vue.js" class="fab fa-vuejs"></i>

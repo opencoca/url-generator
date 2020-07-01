@@ -44,6 +44,14 @@ export default {
   mounted () {
     this.randomEmail()
     this.randomSubject()
+
+    let uri = window.location.search.substring(1);
+    let params = new URLSearchParams(uri);
+    console.log(params);
+  },
+  created() {
+  },
+  updated() {
   }
 }
 </script>

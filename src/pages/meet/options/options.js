@@ -5,9 +5,9 @@ const optionz = {
     name: 'app',
     label: 'Choose your shared content',
     items: [
-      { label: 'White Board', value: 'wbo.ophir.dev/boards/anonymous/' },
-      { label: 'Snap! coding', value: 'https://app.robotinacan.com/videochat.html' },
-      { label: 'Reading', value: 'https://archive.org/stream/TheUltimatePaperPlaneBook?ui=embed#page/n5/mode/2up' }
+      { label: 'White Board', value: 'wbo.ophir.dev/boards/LT2D-2001' },
+      { label: 'Snap! coding', value: 'app.robotinacan.com/videochat.html' },
+      { label: 'Reading', value: 'archive.org/stream/TheUltimatePaperPlaneBook?ui=embed#page/n5/mode/2up' }
     ]
   },
   page: {
